@@ -19,5 +19,5 @@ private fun part1() = input
 
 private fun part2() = input
     .count { (elfARange, elfBRange) ->
-        elfARange.any { it in elfBRange } || elfBRange.any { it in elfARange }
+        elfARange.any { it in elfBRange }
     }
