@@ -2,8 +2,8 @@ package aoc2022
 
 private val input = readResourceFileAsLines("4.txt")
     .map { line ->
-        val (elfALower, elfAHigher, elfBLower, elfBHigher) = line.split(",", "-")
-        elfALower.toInt()..elfAHigher.toInt() to elfBLower.toInt()..elfBHigher.toInt()
+        val (elfALower, elfAHigher, elfBLower, elfBHigher) = line.split(",", "-").map(String::toInt)
+        elfALower..elfAHigher to elfBLower..elfBHigher
     }
 
 fun main() {
