@@ -1,6 +1,4 @@
-package aoc2022
-
-private val input = readResourceFileAsLines("2.txt")
+private val input = readFileAsLines("2.txt")
     .map {
         val (elf, you) = it.split(" ")
         elf to you

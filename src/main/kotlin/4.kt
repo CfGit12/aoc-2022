@@ -1,6 +1,4 @@
-package aoc2022
-
-private val input = readResourceFileAsLines("4.txt")
+private val input = readFileAsLines("4.txt")
     .map { line ->
         val (elfALower, elfAHigher, elfBLower, elfBHigher) = line.split(",", "-").map { it.toInt() }
         elfALower..elfAHigher to elfBLower..elfBHigher

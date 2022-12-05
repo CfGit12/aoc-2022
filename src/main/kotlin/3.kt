@@ -1,6 +1,4 @@
-package aoc2022
-
-private val input = readResourceFileAsLines("3.txt")
+private val input = readFileAsLines("3.txt")
 
 fun main() {
     println("Part 1: ${part1()}")
