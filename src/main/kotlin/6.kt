@@ -5,7 +5,7 @@ fun main() {
     println("Part 2: ${part2()}")
 }
 
-private fun part1() =  findPositionOfDistinctChars(4)
+private fun part1() = findPositionOfDistinctChars(4)
 
 private fun part2() = findPositionOfDistinctChars(14)
 
