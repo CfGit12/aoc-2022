@@ -14,7 +14,7 @@ private fun part2() =
     rootDir
         .allSubDirectories
         .filter { it.size > 30_000_000 - (70_000_000 - rootDir.size) }
-        .minByOrNull { it.size }!!.size
+        .minOf { it.size }
 
 private sealed class Node {
     abstract val name: String
