@@ -19,6 +19,6 @@ fun String.splitIntoCompartments(): List<String> =
     this.chunked(this.length / 2)
 
 fun List<String>.findCommonItem() =
-    this.map(CharSequence::toSet).reduce { acc, chars -> acc.intersect(chars) }.first()
+    this.map { it.toSet() }.reduce { acc, chars -> acc.intersect(chars) }.first()
 
 fun Char.toPriority() = if (this.isUpperCase()) this.code - 38 else this.code - 96
