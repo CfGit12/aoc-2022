@@ -1,4 +1,5 @@
 import kotlin.math.abs
+import kotlin.math.sign
 
 private val input = readFileAsLines("9.txt")
     .map {
