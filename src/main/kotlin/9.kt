@@ -40,10 +40,10 @@ fun simulateRope(size: Int): Int {
     return tailCoordinates.size
 }
 
-fun Coordinate.toRight() = Coordinate(x + 1, y)
-fun Coordinate.toLeft() = Coordinate(x - 1, y)
-fun Coordinate.above() = Coordinate(x, y + 1)
-fun Coordinate.below() = Coordinate(x, y - 1)
+private fun Coordinate.toRight() = Coordinate(x + 1, y)
+private fun Coordinate.toLeft() = Coordinate(x - 1, y)
+private fun Coordinate.above() = Coordinate(x, y + 1)
+private fun Coordinate.below() = Coordinate(x, y - 1)
 
 fun Coordinate.moveTowards(other: Coordinate): Coordinate {
     if (abs(x - other.x) > 1 || abs(y - other.y) > 1) {

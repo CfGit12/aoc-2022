@@ -7,6 +7,9 @@ data class Coordinate(
     val y: Int
 )
 
+infix fun Int.between(other: Int): IntProgression =
+    if (this <= other) this .. other else this downTo other
+
 fun Coordinate.getSurroundingCoordinates(
     minX: Int = Int.MIN_VALUE,
     maxX: Int = Int.MAX_VALUE,
